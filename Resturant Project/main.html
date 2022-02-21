@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Development Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.2.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<header>
+    <ul class="nav nav-tabs" role="tablist">
+        <h1 id="site-title">Sangam</h1>
+        <li class="nav-item" id="navbar">
+            <a class="nav-link active" href="main.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Menu</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="menu.html">Menu</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="menu.html?section=Appetizers">Appetizers</a></li>
+                <li><a class="dropdown-item" href="menu.html?section=Soup">Soup</a></li>
+                <li><a class="dropdown-item" href="menu.html?section=Chow_Mein">Chow Mein</a></li>
+                <li><a class="dropdown-item" href="menu.html?section=Fried_Rice">Fried Rice</a></li>
+                <li><a class="dropdown-item" href="menu.html?section=Chicken">Chicken</a></li>
+                <li><a class="dropdown-item" href="menu.html?section=Lo_Mein">Lo Mein</a></li>
+                <li><a class="dropdown-item" href="menu.html?section=Beef">Beef</a></li>
+                <li><a class="dropdown-item" href="menu.html?section=Pork">Pork</a></li>
+                <li><a class="dropdown-item" href="menu.html?section=Vegan">Vegan</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="#">About</a>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Contact
+            </button>
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="contactModalLabel">Contact Mings Diner</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                Name: <br /> <input class="name" type="text" placeholder="Enter Name" required /><br />
+                                Email: <br /> <input class="email" type="email" placeholder="address@domain"
+                                    required /><br />
+                                Description: <br /> <textarea class="desc" cols="50" rows="5"
+                                    placeholder="Enter Description..." required></textarea>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</header>
+
+
+<body>
+    <section class="main">
+        <div class="container-xxl" id="under-header">
+            <h2 id="specials-header">Todays Special Menu</h2>
+            <div id="carouselHouseSpecials" class=" carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHouseSpecials" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHouseSpecials" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHouseSpecials" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="20000">
+                        <img id="carousel-item" src="images/House_Specials/kung-pao-chicken-20.jpg"
+                            class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Chicken</h5>
+                            <p>Sliced Chcicken with Red and Green Peppers tossed in
+                                our Famous Sweet and Spicy Sauce.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <img id="carousel-item" src="images/House_Specials/General-Tso-Chicken-4.jpg"
+                            class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>General Tso's Chicken</h5>
+                            <p>Sweet and/or Spicy Fried Chicken and Coated in Original Tso Sauce Served with a side of
+                                White
+                                Rice.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="20000">
+                        <img id="carousel-item" src="images/House_Specials/ChickenFriedRice_10.jpg"
+                            class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Chicken Fried Rice</h5>
+                            <p>Fried Brown Rice with Diced Chicken, Mixed Vegetables, Red Peppers, Eggs, and Green
+                                Onions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome-section">
+        <div class="welcome-content">
+            <h2 class="welcome-content-title">Welcome to Sangam!</h2>
+            <hr class="welcome-div">
+            <div class="welcome-content-body">
+                <p> We appreciate our fellow customers and are offering a discount of 10% on online orders for the week!<br> Happy Customer Appreciation Week!</p>
+            </div>
+         </div>
+    </section>
+    <footer class="main-footer">
+        <section class="dark">
+            <div class="container-fluid">
+                <h2 class="footer-title"> Restuarant Hours and Locale</h2>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="store-location-info">
+                            <div class="store-location-title">
+                                <h4 class="store-location-title">Store Location</h4>
+                            </div>
+                            <hr class="store-div" />
+
+                            <div class="store-location-body">
+                                <p>1234 Kolhapur naka,<br />
+                                    karad,satara,maharashtra
+                                    78978-1234
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="store-hours">
+                            <div class="store-hours-title">
+                                <h4 class="store-hours-title">Store Hours</h4>
+                                <hr class="store-div" />
+                            </div>
+                            <div class="store-hours-body">
+                                <p>Weekdays: 10am - 10pm<br />
+                                    Weekends: 11am - 9pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="contact-info">
+                            <div class="contact-info-title">
+                                <h4 class="contact-info-title">Contact Information</h4>
+                                <hr class="store-div" />
+                            </div>
+                            <div class="contact-info-body">
+                                <p>Phone: (123)-456-7890 <br />
+                                    Email: sangam@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+    </footer>
+
+</body>
+
+
+
+</html>
